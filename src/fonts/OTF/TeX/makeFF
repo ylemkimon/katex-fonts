@@ -24,12 +24,12 @@ $map{cmr10} = {
 
     0x10 => 0x131,          # \imath (roman)
     0x11 => 0x237,          # \jmath (roman)
-    0x12 => 0x60,           # \grave
-    0x13 => 0xB4,           # \acute
+    0x12 => 0x2CB,          # \grave
+    0x13 => 0x2CA,          # \acute
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
-    0x16 => 0xAF,           # \bar
-    0x17 => 0xB0,           # \degree
+    0x16 => 0x2C9,          # \bar
+    0x17 => [0xB0,-125,0],  # \degree
     0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
@@ -596,12 +596,12 @@ $map{cmti10} = {
 
     0x10 => 0x131,          # \imath (roman)
     0x11 => 0x237,          # \jmath (roman)
-    0x12 => 0x60,           # \grave
-    0x13 => 0xB4,           # \acute
+    0x12 => 0x2CB,          # \grave
+    0x13 => 0x2CA,          # \acute
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
-    0x16 => 0xAF,           # \bar
-    0x17 => 0xB0,           # \degree
+    0x16 => 0x2C9,          # \bar
+    0x17 => [0xB0,-160,0],  # \degree
     0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x23] => 0x21,    # !, ", #,
@@ -654,12 +654,12 @@ $map{cmbx10} = {
 
     0x10 => 0x131,          # \imath (roman bold)
     0x11 => 0x237,          # \jmath (roman bold)
-    0x12 => 0x60,           # \grave
-    0x13 => 0xB4,           # \acute
+    0x12 => 0x2CB,          # \grave
+    0x13 => 0x2CA,          # \acute
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
-    0x16 => 0xAF,           # \bar
-    0x17 => 0xB0,           # \degree
+    0x16 => 0x2C9,          # \bar
+    0x17 => [0xB0,-147,0],  # \degree
     0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
@@ -1284,12 +1284,12 @@ $map{cmss10} = {
 
     0x10 => 0x131,          # \imath (roman)
     0x11 => 0x237,          # \jmath (roman)
-    0x12 => 0x60,           # \grave
-    0x13 => 0xB4,           # \acute
+    0x12 => 0x2CB,          # \grave
+    0x13 => 0x2CA,          # \acute
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
-    0x16 => 0xAF,           # \bar
-    0x17 => 0xB0,           # \degree
+    0x16 => 0x2C9,          # \bar
+    0x17 => [0xB0,-142,0],  # \degree
     0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
@@ -1329,12 +1329,12 @@ $map{cmssi10} = {
 
     0x10 => 0x131,          # \imath (roman)
     0x11 => 0x237,          # \jmath (roman)
-    0x12 => 0x60,           # \grave
-    0x13 => 0xB4,           # \acute
+    0x12 => 0x2CB,          # \grave
+    0x13 => 0x2CA,          # \acute
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
-    0x16 => 0xAF,           # \bar
-    0x17 => 0xB0,           # \degree
+    0x16 => 0x2C9,          # \bar
+    0x17 => [0xB0,-113,0],  # \degree
     0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
@@ -1377,8 +1377,8 @@ $map{cmssbx10} = {
     0x13 => 0xB4,           # \acute
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
-    0x16 => 0xAF,           # \bar
-    0x17 => 0xB0,           # \degree
+    0x16 => 0x2C9,          # \bar
+    0x17 => [0xB0,-58,0],   # \degree
     0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
@@ -1488,11 +1488,11 @@ $map{cmtt10} = {
 
     0x10 => 0x131,          # \imath (roman)
     0x11 => 0x237,          # \jmath (roman)
-    0x12 => 0x60,           # \grave
-    0x13 => 0xB4,           # \acute
+    0x12 => 0x2CB,          # \grave
+    0x13 => 0x2CA,          # \acute
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
-    0x16 => 0xAF,           # \bar
+    0x16 => 0x2C9,          # \bar
     0x17 => 0xB0,           # \degree
     0x17 => 0x02DA,         # \r, ring above
     0x20 => 0x2423,         # graphic representation of space
@@ -1828,6 +1828,7 @@ $extra{'Main-Regular'} = {
   ],
 
   diacriticals => [
+    'Select(0uB0)',  'SetRBearing(-125,1)',   # \degree
     'Select(0u20D7)','SetRBearing(153,1)',    # \vec
   ],
 
@@ -2100,13 +2101,14 @@ $extra{'Main-Bold'} = {
   ],
 
   diacriticals => [
+    'Select(0uB0)',  'SetRBearing(-147,1)',   # \degree
     'Select(0u20D7)','SetRBearing(154,1)',    # \vec
   ],
 };
 
 $extra{'Main-Italic'} = {
   diacriticals => [
-
+    'Select(0uB0)',  'SetRBearing(-160,1)',   # \degree
   ],
 };
 
@@ -2190,19 +2192,19 @@ $extra{"AMS"} = {
 
 $extra{"SansSerif-Regular"} = {
   diacriticals => [
-
+    'Select(0uB0)',  'SetRBearing(-142,1)',   # \degree
   ],
 };
 
 $extra{"SansSerif-Italic"} = {
   diacriticals => [
-
+    'Select(0uB0)',  'SetRBearing(-113,1)',   # \degree
   ],
 };
 
 $extra{"SansSerif-Bold"} = {
   diacriticals => [
-
+    'Select(0uB0)',  'SetRBearing(-58,1)',   # \degree
   ],
 };
 
