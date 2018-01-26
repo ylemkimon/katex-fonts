@@ -29,7 +29,8 @@ $map{cmr10} = {
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
     0x16 => 0xAF,           # \bar
-    0x17 => [0xB0,-125,0],  # ring above
+    0x17 => 0xB0,           # \degree
+    0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
     0x22 => 0x201D,         # "
@@ -43,7 +44,7 @@ $map{cmr10} = {
     0x5C => 0x201C,         # ``
     [0x5D,0x5E] => 0x5D,    # ], ^
     0x5E => 0x2C6,          # \hat
-    0x5F => [0x2D9,111,0],  # \dot
+    0x5F => 0x2D9,          # \dot
     0x60 => 0x2018,         # `
     [0x61,0x7A] => 0x61,    # a-z
     [0x7B,0x7C] => 0x2013,  # \endash, \emdash
@@ -600,7 +601,8 @@ $map{cmti10} = {
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
     0x16 => 0xAF,           # \bar
-    0x17 => [0xB0,-160,0],  # ring above
+    0x17 => 0xB0,           # \degree
+    0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x23] => 0x21,    # !, ", #,
     0x22 => 0x201D,         # "
@@ -615,8 +617,8 @@ $map{cmti10} = {
     0x5B => 0x5B,           # [
     0x5C => 0x201C,         # ``
     [0x5D,0x5E] => 0x5D,    # ], ^
-    0x5E => [0x302,-511,0], # \hat (combining)
-    0x5F => [0x307,-409,0], # \dot (combining)
+    0x5E => 0x2C6,          # \hat
+    0x5F => 0x2D9,          # \dot
     0x60 => 0x2018,         # `
     [0x61,0x7A] => 0x61,    # a-z
     [0x7B,0x7C] => 0x2013,  # \endash, \emdash
@@ -657,7 +659,8 @@ $map{cmbx10} = {
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
     0x16 => 0xAF,           # \bar
-    0x17 => [0xB0,-147,0],  # ring above
+    0x17 => 0xB0,           # \degree
+    0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
     0x22 => 0x201D,         # "
@@ -671,7 +674,7 @@ $map{cmbx10} = {
     0x5C => 0x201C,         # ``
     [0x5D,0x5E] => 0x5D,    # ], ^
     0x5E => 0x2C6,          # \hat
-    0x5F => [0x2D9,128,0],  # \dot
+    0x5F => 0x2D9,          # \dot
     0x60 => 0x2018,         # `
     [0x61,0x7A] => 0x61,    # a-z
     [0x7B,0x7C] => 0x2013,  # \endash, \emdash
@@ -1286,7 +1289,8 @@ $map{cmss10} = {
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
     0x16 => 0xAF,           # \bar
-    0x17 => [0xB0,-125,0],  # ring above
+    0x17 => 0xB0,           # \degree
+    0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
     0x22 => 0x201D,         # "
@@ -1300,7 +1304,7 @@ $map{cmss10} = {
     0x5C => 0x201C,         # ``
     [0x5D,0x5E] => 0x5D,    # ], ^
     0x5E => 0x2C6,          # \hat
-    0x5F => [0x2D9,111,0],  # \dot
+    0x5F => 0x2D9,          # \dot
     0x60 => 0x2018,         # `
     [0x61,0x7A] => 0x61,    # a-z
     [0x7B,0x7C] => 0x2013,  # \endash, \emdash
@@ -1330,7 +1334,8 @@ $map{cmssi10} = {
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
     0x16 => 0xAF,           # \bar
-    0x17 => [0xB0,-125,0],  # ring above
+    0x17 => 0xB0,           # \degree
+    0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
     0x22 => 0x201D,         # "
@@ -1344,7 +1349,7 @@ $map{cmssi10} = {
     0x5C => 0x201C,         # ``
     [0x5D,0x5E] => 0x5D,    # ], ^
     0x5E => 0x2C6,          # \hat
-    0x5F => [0x2D9,111,0],  # \dot
+    0x5F => 0x2D9,          # \dot
     0x60 => 0x2018,         # `
     [0x61,0x7A] => 0x61,    # a-z
     [0x7B,0x7C] => 0x2013,  # \endash, \emdash
@@ -1373,7 +1378,8 @@ $map{cmssbx10} = {
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
     0x16 => 0xAF,           # \bar
-    0x17 => [0xB0,-125,0],  # ring above
+    0x17 => 0xB0,           # \degree
+    0x17 => 0x02DA,         # \r, ring above
 
     [0x21,0x2F] => 0x21,    # !, ", #, $, %, &, ', (, ), *, +, comma, -, ., /
     0x22 => 0x201D,         # "
@@ -1387,7 +1393,7 @@ $map{cmssbx10} = {
     0x5C => 0x201C,         # ``
     [0x5D,0x5E] => 0x5D,    # ], ^
     0x5E => 0x2C6,          # \hat
-    0x5F => [0x2D9,122,0],  # \dot
+    0x5F => 0x2D9,          # \dot
     0x60 => 0x2018,         # `
     [0x61,0x7A] => 0x61,    # a-z
     [0x7B,0x7C] => 0x2013,  # \endash, \emdash
@@ -1487,7 +1493,8 @@ $map{cmtt10} = {
     0x14 => 0x2C7,          # \check
     0x15 => 0x2D8,          # \breve
     0x16 => 0xAF,           # \bar
-    0x17 => [0xB0,-125,0],  # ring above
+    0x17 => 0xB0,           # \degree
+    0x17 => 0x02DA,         # \r, ring above
     0x20 => 0x2423,         # graphic representation of space
 
     [0x21,0x7F] => 0x21,
@@ -1495,7 +1502,7 @@ $map{cmtt10} = {
     0x60 => 0x2018,         # left quote
     0x27 => 0x2019,         # right quote
     0x5E => 0x2C6,          # \hat
-    0x5F => [0x2D9,111,0],  # \dot
+    0x5F => 0x2D9,          # \dot
     0x7D => 0x2DD,          # double acute
     0x7E => [0x7E,0,-350],  # ~
     0x7E => 0x2DC,          # \tilde
@@ -1821,11 +1828,6 @@ $extra{'Main-Regular'} = {
   ],
 
   diacriticals => [
-    'Select(0u2D9)', 'SetRBearing(111,1)',    # \dot
-    'Select(0uB0)',  'SetRBearing(-125,1)',   # ring above
-    'Select(0u2DA)', 'SetRBearing(-125,1)',   # ring above
-    'Select(0u307)', 'SetRBearing(111,1)',    # \dot (combining)
-    'Select(0u30A)', 'SetRBearing(-125,1)',   # ring above (combining)
     'Select(0u20D7)','SetRBearing(153,1)',    # \vec
   ],
 
@@ -2098,19 +2100,13 @@ $extra{'Main-Bold'} = {
   ],
 
   diacriticals => [
-    'Select(0u2D9)', 'SetRBearing(128,1)',    # \dot
-    'Select(0uB0)',  'SetRBearing(-147,1)',   # ring above
-    'Select(0u2DA)', 'SetRBearing(-147,1)',   # ring above
-    'Select(0u307)', 'SetRBearing(128,1)',    # \dot (combining)
-    'Select(0u30A)', 'SetRBearing(-147,1)',   # ring above (combining)
     'Select(0u20D7)','SetRBearing(154,1)',    # \vec
   ],
 };
 
 $extra{'Main-Italic'} = {
   diacriticals => [
-    'Select(0u307)', 'SetRBearing(102,1)',    # \dot (combining)
-    'Select(0u30A)', 'SetRBearing(-160,1)',   # ring above (combining)
+
   ],
 };
 
@@ -2194,22 +2190,19 @@ $extra{"AMS"} = {
 
 $extra{"SansSerif-Regular"} = {
   diacriticals => [
-    'Select(0u307)', 'SetRBearing(111,1)',   # \dot (combining)
-    'Select(0u30A)', 'SetRBearing(-125,1)',  # ring above (combining)
+
   ],
 };
 
 $extra{"SansSerif-Italic"} = {
   diacriticals => [
-    'Select(0u307)', 'SetRBearing(111,1)',    # \dot (combining)
-    'Select(0u30A)', 'SetRBearing(-125,1)',   # ring above (combining)
+
   ],
 };
 
 $extra{"SansSerif-Bold"} = {
   diacriticals => [
-    'Select(0u307)', 'SetRBearing(122,1)',    # \dot (combining)
-    'Select(0u30A)', 'SetRBearing(-125,1)',   # ring above (combining)
+
   ],
 };
 
