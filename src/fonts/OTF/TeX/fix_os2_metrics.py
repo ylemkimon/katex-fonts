@@ -4,15 +4,17 @@ import fontforge
 
 import sys
 
-if len(sys.argv) < 4:
-    print "Usage: %s <font file> <ascent> <descent>" % sys.argv[0]
+if len(sys.argv) < 2:
+    print "Usage: %s <font file>" % sys.argv[0]
     sys.exit(1)
 
 font_file = sys.argv[1]
-ascent = int(sys.argv[2])
-descent = int(sys.argv[3])
 
 font = fontforge.open(font_file)
+
+boundingBoxes = list(font[c].boundingBox() for c in font)
+ascent = int(max(b[3] for b in boundingBoxes))
+descent = -int(min(b[1] for b in boundingBoxes))
 
 font.os2_winascent = ascent
 font.os2_windescent = descent
