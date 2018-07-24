@@ -14,7 +14,6 @@ RUN apt-get update \
     wget \
     fontforge \
     mftrace \
-    fonttools \
     optipng \
     advancecomp \
     man-db \
@@ -24,12 +23,15 @@ RUN apt-get update \
     python-fontforge \
     ruby \
     woff-tools \
+    python-dev \
+    python-pip \
     pkg-config \
     libharfbuzz-dev \
     libfreetype6-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && gem install ttfunk --version 1.1.1
+ && pip install fonttools==3.28.0 brotli zopfli
 
 # Download yuicompressor
 ADD https://github.com/yui/yuicompressor/releases/download/v2.4.8/yuicompressor-2.4.8.jar /usr/share/yui-compressor/yui-compressor.jar
