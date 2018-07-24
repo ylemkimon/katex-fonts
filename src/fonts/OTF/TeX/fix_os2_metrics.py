@@ -22,4 +22,4 @@ font.os2_windescent = descent
 font.hhea_ascent = ascent
 font.hhea_descent = -descent
 
-font.generate(font_file, flags=("TeX-table"))
+font.generate(font_file)
