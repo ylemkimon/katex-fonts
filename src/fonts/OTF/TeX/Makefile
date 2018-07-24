@@ -148,4 +148,4 @@ fonts: OTFandTTF woff woff2
 
 clean:
 	rm -f $(MFTRACE_MODIFIED) lib/blacker.mf
-	rm -rf pfa ff otf ttf woff
+	rm -rf pfa ff otf ttf woff woff2
