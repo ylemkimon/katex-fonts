@@ -119,7 +119,7 @@ fonts: ff
 			$(TTFAUTOHINT) --windows-compatibility $$file $$file.hinted; \
 		fi; \
 		mv $$file.hinted $$file; \
-
+                \
 		echo "Generating $$file..."; \
 		$(PYTHON) generate_fonts.py $$file; \
 		done

@@ -1,4 +1,4 @@
-  HTMLCSS.FONTDATA.FONTS['MathJax_Caligraphic'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Caligraphic'].skew = {
     0x41: 0.194,
     0x42: 0.139,
     0x43: 0.139,
@@ -27,7 +27,7 @@
     0x5A: 0.139
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_Caligraphic-bold'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Caligraphic-bold'].skew = {
     0x41: 0.224,
     0x42: 0.16,
     0x43: 0.16,
@@ -56,7 +56,7 @@
     0x5A: 0.16
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_Greek-bold-italic'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Greek-bold-italic'].skew = {
     0x393: 0.0958,
     0x394: 0.192,
     0x398: 0.0958,
@@ -93,7 +93,7 @@
     0x3F5: 0.0639
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_Greek-italic'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Greek-italic'].skew = {
     0x393: 0.0833,
     0x394: 0.167,
     0x398: 0.0833,
@@ -130,7 +130,7 @@
     0x3F5: 0.0556
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_Main-bold'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Main-bold'].skew = {
     0x131: 0.0319,
     0x237: 0.0958,
     0x210F: -0.0319,
@@ -138,7 +138,7 @@
     0x2202: 0.0958
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_Main'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Main'].skew = {
     0x131: 0.0278,
     0x237: 0.0833,
     0x2113: 0.111,
@@ -146,7 +146,7 @@
     0x2202: 0.0833
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_Math-bold-italic'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Math-bold-italic'].skew = {
     0x41: 0.16,
     0x42: 0.0958,
     0x43: 0.0958,
@@ -225,7 +225,7 @@
     0x3F5: 0.0639
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_Math-italic'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Math-italic'].skew = {
     0x41: 0.139,
     0x42: 0.0833,
     0x43: 0.0833,
@@ -304,7 +304,7 @@
     0x3F5: 0.0556
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_Script'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_Script'].skew = {
     0x41: 0.389,
     0x42: 0.194,
     0x43: 0.278,
@@ -333,12 +333,12 @@
     0x5A: 0.306
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_WinChrome'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_WinChrome'].skew = {
     0x54: 0.0278,
     0xE2F0: 0.0319
   };
 
-  HTMLCSS.FONTDATA.FONTS['MathJax_WinIE6'].skew = {
+  HTMLCSS.FONTDATA.FONTS['KaTeX_WinIE6'].skew = {
     0xE20D: 0.0833,
     0xE24D: 0.0958
   };
