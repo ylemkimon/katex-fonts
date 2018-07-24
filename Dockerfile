@@ -21,8 +21,6 @@ RUN apt-get update \
     unzip \
     zlib1g-dev \
     python-fontforge \
-    ruby \
-    woff-tools \
     python-dev \
     python-pip \
     pkg-config \
@@ -30,7 +28,6 @@ RUN apt-get update \
     libfreetype6-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
- && gem install ttfunk --version 1.1.1
  && pip install fonttools==3.28.0 brotli zopfli
 
 # Download yuicompressor
@@ -59,10 +56,3 @@ RUN wget "http://download.savannah.gnu.org/releases/freetype/ttfautohint-1.3.tar
  && mv frontend/ttfautohint /usr/bin \
  && cd .. \
  && rm -r ttfautohint-*
-
-# Download and compile woff2_compress
-RUN wget "https://github.com/google/woff2/archive/d9a74803fa884559879e3205cfe6f257a2d85519.tar.gz" -O woff2.tar.gz \
- && tar -xzf woff2.tar.gz \
- && make -C woff2-*/woff2/ \
- && mv woff2-*/woff2/woff2_compress /usr/bin \
- && rm -r woff2*

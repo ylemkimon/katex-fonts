@@ -96,9 +96,10 @@ ff: pfa
 	rm -f ff/* otf/*
 	$(PERL)	makeFF
 
-ttf: ff
-	mkdir -p ttf
-	rm -f ttf/*
+.PHONY: fonts
+fonts: ff
+	mkdir -p ttf woff woff2
+	rm -f ttf/* woff/* woff2/*
 
         # Handle the KaTeX_Size4 font first as it used by other fonts.
 	@echo "KaTeX_Size4.ff"
@@ -111,16 +112,18 @@ ttf: ff
 		done
 
 	@for file in `ls ttf/*.ttf`; do \
-		echo "hinting $$file"; \
+		echo "Hinting $$file"; \
 		if echo "$$file" | $(GREP) -q -e "Greek" -e "Size[1-4]" -e "Typewriter" -e "Win"; then \
 			$(TTFAUTOHINT) --windows-compatibility --symbol $$file $$file.hinted; \
 		else \
 			$(TTFAUTOHINT) --windows-compatibility $$file $$file.hinted; \
 		fi; \
 		mv $$file.hinted $$file; \
+
+		echo "Generating $$file..."; \
+		$(PYTHON) generate_fonts.py $$file; \
 		done
 
-	./fix_os2_metrics.rb ttf/
 eot: ttf
 	mkdir -p eot
 	rm -f eot/*
@@ -144,28 +147,6 @@ svg: ttf
 
 	rm -f svg/*WinIE6* svg/*Greek*
 
-woff: otf ttf
-	@for file in `ls ttf/*.ttf | $(SED) 's|ttf/\(.*\)\.ttf|\1|'`; do \
-		echo "Generating $$file.woff..."; \
-		$(SFNT2WOFF) ttf/$$file.ttf; \
-		done
-
-	mkdir -p woff
-	rm -f woff/*
-	mv ttf/*.woff woff
-	rm -f woff/*WinChrom* woff/*WinIE6* woff/*Greek*
-
-woff2: woff
-	@for file in `ls ttf/*.ttf | $(SED) 's|ttf/\(.*\)\.ttf|\1|'`; do \
-		echo "Generating $$file.woff2..."; \
-		$(WOFF2) ttf/$$file.ttf; \
-		done
-
-	mkdir -p woff2
-	rm -f woff2/*
-	mv ttf/*.woff2 woff2
-	rm -f woff2/*WinChrom* woff2/*WinIE6* woff2/*Greek*
-
 css: woff
 	mkdir -p css
 	rm -f css/*
@@ -177,10 +158,6 @@ css: woff
 
 	$(PERL) css2all css/*.css > KaTeX-All.css
 	mv KaTeX-All.css css
-
-OTFandTTF: ttf
-
-fonts: OTFandTTF eot svg woff # css
 
 install:
         #Copy the font files into the system font directory
