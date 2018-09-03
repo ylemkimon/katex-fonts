@@ -7,19 +7,12 @@ RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     --no-install-recommends --auto-remove \
     git \
-    dvipng \
-    default-jre \
-    default-jdk \
     texlive \
     wget \
     fontforge \
     mftrace \
-    optipng \
-    advancecomp \
     man-db \
     build-essential \
-    unzip \
-    zlib1g-dev \
     python-fontforge \
     python-dev \
     python-pip \
@@ -29,23 +22,6 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && pip install fonttools==3.28.0 brotli zopfli
-
-# Download yuicompressor
-ADD https://github.com/yui/yuicompressor/releases/download/v2.4.8/yuicompressor-2.4.8.jar /usr/share/yui-compressor/yui-compressor.jar
-
-# Download batik-ttf2svg.jar
-RUN wget "https://archive.apache.org/dist/xmlgraphics/batik/batik-1.7.zip" \
- && unzip batik-*.zip batik-*/batik-ttf2svg.jar \
- && mv batik-*/batik-ttf2svg.jar /usr/share/java/ \
- && rm -r batik-*
-
-# Download and compile ttf2eof (note we add a patch to make it compile)
-RUN wget "https://github.com/wget/ttf2eot/archive/v0.0.2-2.tar.gz" -O ttf2eot.tar.gz\
- && tar -xzf ttf2eot.tar.gz \
- && sed -i "1s/^/#include <cstddef>/" ttf2eot-*/OpenTypeUtilities.h \
- && make -C ttf2eot-*/ \
- && mv ttf2eot-*/ttf2eot /usr/bin/ \
- && rm -r ttf2eot*
 
 # Download and compile ttfautohint
 RUN wget "http://download.savannah.gnu.org/releases/freetype/ttfautohint-1.3.tar.gz" \
