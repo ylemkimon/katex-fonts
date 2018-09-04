@@ -19,6 +19,7 @@ RUN apt-get update \
     pkg-config \
     libharfbuzz-dev \
     libfreetype6-dev \
+    libjson-perl \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && pip install fonttools==3.28.0 brotli zopfli
